@@ -1,0 +1,108 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    background-color:#222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#heading{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #222;
+
+}
+
+.list{
+    width:80%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.task{
+    background-color: rgb(2, 197, 158);
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid black 4px;
+    border-radius: 12px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.task button{
+    width: 50px;
+    text-align: center;
+    background-color: rgb(246, 255, 127);
+    border: solid black 2px;
+    color: black;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.inputbox{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.inputbox input{
+    width: 80%;
+    height: 30px;
+
+}
+
+
+.inputbox button{
+    background-color: rgb(47, 255, 47);
+    color: black;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 8%;
+    height: 100%;
+    transition: all 100ms ease-out;
+}
+
+.task button:hover{
+    scale: 1.1;
+    background-color: rgb(5, 255, 5);
+}
+
+.addBtn:hover{
+    scale: 1.1;
+    background-color: yellow;
+}
+
+button{
+    cursor: pointer;
+    user-select: none;
+}
